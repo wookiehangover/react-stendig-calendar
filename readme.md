@@ -1,16 +1,16 @@
-# React Calendar
+# React Stendig Calendar
 
-> A Calendar component for React
+> A Calendar component for React based on the iconic <a href="http://stendigcalendar.com/Stendig_Calendar/Welcome.html">Stendig Calendar</a>
 
 ## Usage
 
 ```javascript
-var Calendar = require('react-calendar');
+var Calendar = require('react-stendig-calendar');
 
 React.renderComponent(
   Calendar({
     startDate: Date.now()
   }),
-  document.getElementById('#calendar-container');
+  document.getElementById('#calendar-container')
 )
 ```
