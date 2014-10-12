@@ -1,0 +1,10 @@
+{
+  "node": true,
+  "globals": {
+    "it": true,
+    "before": true,
+    "beforeEach": true,
+    "decribe": true,
+    "context": true,
+  }
+}

@@ -33,9 +33,10 @@ var Calendar = React.createClass({
       k3: _.contains(K3, day),
       today: day === today
     });
+    var key = 'd' + day
 
     return (
-      <td className={classList}>{day}</td>
+      <td className={classList} key={key}>{day}</td>
     );
   },
 
@@ -46,7 +47,7 @@ var Calendar = React.createClass({
       var day = (rowIndex * 7) + (cellIndex + 1) - first;
 
       if (day < 1 || day > daysInMonth) {
-        cell = (<td></td>);
+        cell = (<td key={_.uniqueId('row' + rowIndex)}></td>);
       } else {
         cell = this.renderCell(day, today);
       }
@@ -73,7 +74,7 @@ var Calendar = React.createClass({
     for(var i=0;i < 5;i++) {
       var tmpRow = this.renderRow(i, first, daysInMonth, today);
       rows.push(
-        <tr>{tmpRow}</tr>
+        <tr key={('row' + i)}>{tmpRow}</tr>
       );
     }
     return rows;
@@ -88,13 +89,13 @@ var Calendar = React.createClass({
         <table>
           <thead>
             <tr>
-              <td>M</td>
-              <td>T</td>
-              <td>W</td>
-              <td>T</td>
-              <td>F</td>
-              <td>S</td>
-              <td>S</td>
+              <td key="day1">M</td>
+              <td key="day2">T</td>
+              <td key="day3">W</td>
+              <td key="day4">T</td>
+              <td key="day5">F</td>
+              <td key="day6">S</td>
+              <td key="day7">S</td>
             </tr>
           </thead>
           <tbody>
