@@ -1,0 +1,25 @@
+{
+  "name": "react-calendar",
+  "version": "0.0.1",
+  "dependencies": {
+    "lodash": "^2.4.1",
+    "moment": "^2.8.3",
+    "react": "^0.11.2"
+  },
+  "devDependencies": {
+    "react-tools": "^0.11.2"
+  },
+  "scripts": {
+    "build-js": "jsx src/ lib/"
+  },
+  "description": "A Calendar component for React",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "keywords": [
+    "react"
+  ],
+  "author": "wookiehangover <sam@quickleft.com>",
+  "license": "ISC"
+}
