@@ -1,6 +1,6 @@
 {
   "name": "react-stendig-calendar",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "dependencies": {
     "lodash": "^2.4.1",
     "moment": "^2.8.3",
@@ -22,11 +22,20 @@
   "description": "A Calendar component for React",
   "main": "index.js",
   "directories": {
+    "example": "examples",
     "test": "test"
   },
   "keywords": [
     "react"
   ],
   "author": "wookiehangover <sam@quickleft.com>",
-  "license": "ISC"
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/wookiehangover/react-stendig-calendar.git"
+  },
+  "bugs": {
+    "url": "https://github.com/wookiehangover/react-stendig-calendar/issues"
+  },
+  "homepage": "https://github.com/wookiehangover/react-stendig-calendar"
 }
