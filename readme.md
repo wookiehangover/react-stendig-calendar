@@ -7,10 +7,8 @@
 ```javascript
 var Calendar = require('react-stendig-calendar');
 
-React.renderComponent(
-  Calendar({
-    startDate: Date.now()
-  }),
+React.render(
+  <Calendar startDate={Date.now()} />,
   document.getElementById('#calendar-container')
 )
 ```
